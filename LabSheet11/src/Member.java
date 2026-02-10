@@ -26,10 +26,11 @@ public class Member extends Customer implements Rewardable{
 
     @Override
     public String toString() {
-        return super.toString() +
+        return super.toString() + 
                 "\nMember level: " + member_level + " (Discount: " + getDiscountRate() + ")" +
                 "\nGet point: " + collectPoints() +
                 "\nTotal price: " + calculateFinalBill();
     }
 }
+
 
