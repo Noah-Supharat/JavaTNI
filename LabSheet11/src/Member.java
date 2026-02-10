@@ -7,15 +7,15 @@ public class Member extends Customer implements Rewardable{
     }
 
     public double calculateFinalBill(){
-        return getBillAmount() - getDiscountRate();
+        return getBillAmount() - (getBillAmount() * getDiscountRate());
     }
 
     @Override
     public double getDiscountRate() {
         if(member_level.equalsIgnoreCase("Gold")){
-            return getBillAmount() * 15 / 100.00;
+            return 0.15;
         } else if (member_level.equalsIgnoreCase("Premium")) {
-            return getBillAmount() * 20 / 100.00;
+            return 0.20;
         } return 0;
     }
 
@@ -32,3 +32,4 @@ public class Member extends Customer implements Rewardable{
                 "\nTotal price: " + calculateFinalBill();
     }
 }
+
