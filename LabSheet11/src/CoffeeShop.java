@@ -58,7 +58,7 @@ public class CoffeeShop {
             espresso.addShot(shot);
         }
 
-        System.out.println("Your order: Espresso (Size: " + size + ")");
+        System.out.println("Your order: Espresso (Size: " + size.toUpperCase() + ")");
         System.out.println("Total Price = " + espresso.calculateFinalPrice() + " Baht");
 
         System.out.println();
@@ -77,7 +77,7 @@ public class CoffeeShop {
 
         Frappuccino frappuccino = new Frappuccino(size, (whipped.equalsIgnoreCase("Y")));
 
-        System.out.println("Your order: Frappucino (Size: " + size + ")");
+        System.out.println("Your order: Frappucino (Size: " + size.toUpperCase() + ")");
         System.out.println("Total Price = " + frappuccino.calculateFinalPrice() + " Baht");
 
         System.out.println();
@@ -85,3 +85,4 @@ public class CoffeeShop {
         return frappuccino;
     }
 }
+
