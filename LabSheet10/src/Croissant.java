@@ -39,7 +39,7 @@ public class Croissant extends Bakery{
 
     @Override
     public double calculateTotalPrice() {
-        return piece * getUnitPrice() + getPackingCost();
+        return piece * getUnitPrice() + getPackingCost() + (isFilling ? getFillingPrice() : 0) + (isTopping ? getToppingPrice() : 0) + (isFruit ? getFruitPrice() : 0);
     }
 
     @Override
@@ -52,3 +52,4 @@ public class Croissant extends Bakery{
                 "\nTotal price of Croissant = " + calculateTotalPrice();
     }
 }
+
