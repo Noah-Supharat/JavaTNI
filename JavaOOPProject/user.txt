@@ -1,0 +1,3 @@
+0982509170,000000,Suphanan-Supharat,287
+0123456789,000000,Kudo-shinichi,0
+0999999999,000000,Edogawa-conan,0
